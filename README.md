@@ -21,9 +21,13 @@ Distributed under the [MIT License](http://www.opensource.org/licenses/mit-licen
 * Zhaoyang Wang
   - https://github.com/wz18207
   - wz18207@gmail.com
-  - ww02082345@yahoo.com
+  - ww02082345@yahoo.com(if gmail doesn't reponse....)
 
 # Reference
+
+* Kinect2Grabber by UnaNancyOwen
+
+  https://github.com/UnaNancyOwen/KinectGrabber
 
 * openni_grabber | Point Cloud Library
 
