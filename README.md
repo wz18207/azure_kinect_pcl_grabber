@@ -12,7 +12,8 @@ Writing the work based on the Kinect2Grabber by UnaNancyOwen
 
 # License
 
-Copyright © 2020 Zhaoyang Wang
+Copyright © 2020 Zhaoyang Wang.
+
 Distributed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
 
 # Contact
