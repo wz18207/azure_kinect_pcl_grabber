@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EB8C6C80-15E9-4616-956A-28B38EE0E960}</ProjectGuid>
+    <RootNamespace>AzureKinectTest</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\PCL 1.9.1\include\pcl-1.9;C:\PCL 1.9.1\3rdParty\OpenNI2\Include;C:\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\PCL 1.9.1\3rdParty\Eigen\eigen3;C:\PCL 1.9.1\3rdParty\FLANN\include;C:\PCL 1.9.1\3rdParty\Qhull\include;C:\PCL 1.9.1\3rdParty\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\PCL 1.9.1\lib;C:\PCL 1.9.1\3rdParty\Boost\lib;C:\PCL 1.9.1\3rdParty\FLANN\lib;C:\PCL 1.9.1\3rdParty\OpenNI2\Lib;C:\PCL 1.9.1\3rdParty\Qhull\lib;C:\PCL 1.9.1\3rdParty\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\PCL 1.9.1\include\pcl-1.9;C:\PCL 1.9.1\3rdParty\OpenNI2\Include;C:\PCL 1.9.1\3rdParty\Boost\include\boost-1_68;C:\PCL 1.9.1\3rdParty\Eigen\eigen3;C:\PCL 1.9.1\3rdParty\FLANN\include;C:\PCL 1.9.1\3rdParty\Qhull\include;C:\PCL 1.9.1\3rdParty\VTK\include\vtk-8.1;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\PCL 1.9.1\lib;C:\PCL 1.9.1\3rdParty\Boost\lib;C:\PCL 1.9.1\3rdParty\FLANN\lib;C:\PCL 1.9.1\3rdParty\OpenNI2\Lib;C:\PCL 1.9.1\3rdParty\Qhull\lib;C:\PCL 1.9.1\3rdParty\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>pcl_common_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_io_ply_release.lib;pcl_io_release.lib;pcl_kdtree_release.lib;pcl_keypoints_release.lib;pcl_ml_release.lib;pcl_octree_release.lib;pcl_outofcore_release.lib;pcl_people_release.lib;pcl_recognition_release.lib;pcl_registration_release.lib;pcl_sample_consensus_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_stereo_release.lib;pcl_surface_release.lib;pcl_tracking_release.lib;pcl_visualization_release.lib;vtkalglib-8.1.lib;vtkChartsCore-8.1.lib;vtkCommonColor-8.1.lib;vtkCommonComputationalGeometry-8.1.lib;vtkCommonCore-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonSystem-8.1.lib;vtkCommonTransforms-8.1.lib;vtkDICOMParser-8.1.lib;vtkDomainsChemistry-8.1.lib;vtkexoIIc-8.1.lib;vtkexpat-8.1.lib;vtkFiltersAMR-8.1.lib;vtkFiltersCore-8.1.lib;vtkFiltersExtraction-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkFiltersGeneric-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkFiltersHybrid-8.1.lib;vtkFiltersHyperTree-8.1.lib;vtkFiltersImaging-8.1.lib;vtkFiltersModeling-8.1.lib;vtkFiltersParallel-8.1.lib;vtkFiltersParallelImaging-8.1.lib;vtkFiltersPoints-8.1.lib;vtkFiltersProgrammable-8.1.lib;vtkFiltersSelection-8.1.lib;vtkFiltersSMP-8.1.lib;vtkFiltersSources-8.1.lib;vtkFiltersStatistics-8.1.lib;vtkFiltersTexture-8.1.lib;vtkFiltersTopology-8.1.lib;vtkFiltersVerdict-8.1.lib;vtkfreetype-8.1.lib;vtkGeovisCore-8.1.lib;vtkgl2ps-8.1.lib;vtkhdf5-8.1.lib;vtkhdf5_hl-8.1.lib;vtkImagingColor-8.1.lib;vtkImagingCore-8.1.lib;vtkImagingFourier-8.1.lib;vtkImagingGeneral-8.1.lib;vtkImagingHybrid-8.1.lib;vtkImagingMath-8.1.lib;vtkImagingMorphological-8.1.lib;vtkImagingSources-8.1.lib;vtkImagingStatistics-8.1.lib;vtkImagingStencil-8.1.lib;vtkInfovisCore-8.1.lib;vtkInfovisLayout-8.1.lib;vtkInteractionImage-8.1.lib;vtkInteractionStyle-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkIOAMR-8.1.lib;vtkIOCore-8.1.lib;vtkIOEnSight-8.1.lib;vtkIOExodus-8.1.lib;vtkIOExport-8.1.lib;vtkIOExportOpenGL-8.1.lib;vtkIOGeometry-8.1.lib;vtkIOImage-8.1.lib;vtkIOImport-8.1.lib;vtkIOInfovis-8.1.lib;vtkIOLegacy-8.1.lib;vtkIOLSDyna-8.1.lib;vtkIOMINC-8.1.lib;vtkIOMovie-8.1.lib;vtkIONetCDF-8.1.lib;vtkIOParallel-8.1.lib;vtkIOParallelXML-8.1.lib;vtkIOPLY-8.1.lib;vtkIOSQL-8.1.lib;vtkIOTecplotTable-8.1.lib;vtkIOVideo-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkjpeg-8.1.lib;vtkjsoncpp-8.1.lib;vtklibharu-8.1.lib;vtklibxml2-8.1.lib;vtklz4-8.1.lib;vtkmetaio-8.1.lib;vtkNetCDF-8.1.lib;vtknetcdfcpp-8.1.lib;vtkoggtheora-8.1.lib;vtkParallelCore-8.1.lib;vtkpng-8.1.lib;vtkproj4-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkRenderingContext2D-8.1.lib;vtkRenderingContextOpenGL-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkRenderingGL2PS-8.1.lib;vtkRenderingImage-8.1.lib;vtkRenderingLabel-8.1.lib;vtkRenderingLIC-8.1.lib;vtkRenderingLOD-8.1.lib;vtkRenderingOpenGL-8.1.lib;vtkRenderingVolume-8.1.lib;vtkRenderingVolumeOpenGL-8.1.lib;vtksqlite-8.1.lib;vtksys-8.1.lib;vtktiff-8.1.lib;vtkverdict-8.1.lib;vtkViewsContext2D-8.1.lib;vtkViewsCore-8.1.lib;vtkViewsInfovis-8.1.lib;vtkzlib-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;_SILENCE_FPOS_SEEKPOS_DEPRECATION_WARNING;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>pcl_common_release.lib;pcl_features_release.lib;pcl_filters_release.lib;pcl_io_ply_release.lib;pcl_io_release.lib;pcl_kdtree_release.lib;pcl_keypoints_release.lib;pcl_ml_release.lib;pcl_octree_release.lib;pcl_outofcore_release.lib;pcl_people_release.lib;pcl_recognition_release.lib;pcl_registration_release.lib;pcl_sample_consensus_release.lib;pcl_search_release.lib;pcl_segmentation_release.lib;pcl_stereo_release.lib;pcl_surface_release.lib;pcl_tracking_release.lib;pcl_visualization_release.lib;vtkalglib-8.1.lib;vtkChartsCore-8.1.lib;vtkCommonColor-8.1.lib;vtkCommonComputationalGeometry-8.1.lib;vtkCommonCore-8.1.lib;vtkCommonDataModel-8.1.lib;vtkCommonExecutionModel-8.1.lib;vtkCommonMath-8.1.lib;vtkCommonMisc-8.1.lib;vtkCommonSystem-8.1.lib;vtkCommonTransforms-8.1.lib;vtkDICOMParser-8.1.lib;vtkDomainsChemistry-8.1.lib;vtkexoIIc-8.1.lib;vtkexpat-8.1.lib;vtkFiltersAMR-8.1.lib;vtkFiltersCore-8.1.lib;vtkFiltersExtraction-8.1.lib;vtkFiltersFlowPaths-8.1.lib;vtkFiltersGeneral-8.1.lib;vtkFiltersGeneric-8.1.lib;vtkFiltersGeometry-8.1.lib;vtkFiltersHybrid-8.1.lib;vtkFiltersHyperTree-8.1.lib;vtkFiltersImaging-8.1.lib;vtkFiltersModeling-8.1.lib;vtkFiltersParallel-8.1.lib;vtkFiltersParallelImaging-8.1.lib;vtkFiltersPoints-8.1.lib;vtkFiltersProgrammable-8.1.lib;vtkFiltersSelection-8.1.lib;vtkFiltersSMP-8.1.lib;vtkFiltersSources-8.1.lib;vtkFiltersStatistics-8.1.lib;vtkFiltersTexture-8.1.lib;vtkFiltersTopology-8.1.lib;vtkFiltersVerdict-8.1.lib;vtkfreetype-8.1.lib;vtkGeovisCore-8.1.lib;vtkgl2ps-8.1.lib;vtkhdf5-8.1.lib;vtkhdf5_hl-8.1.lib;vtkImagingColor-8.1.lib;vtkImagingCore-8.1.lib;vtkImagingFourier-8.1.lib;vtkImagingGeneral-8.1.lib;vtkImagingHybrid-8.1.lib;vtkImagingMath-8.1.lib;vtkImagingMorphological-8.1.lib;vtkImagingSources-8.1.lib;vtkImagingStatistics-8.1.lib;vtkImagingStencil-8.1.lib;vtkInfovisCore-8.1.lib;vtkInfovisLayout-8.1.lib;vtkInteractionImage-8.1.lib;vtkInteractionStyle-8.1.lib;vtkInteractionWidgets-8.1.lib;vtkIOAMR-8.1.lib;vtkIOCore-8.1.lib;vtkIOEnSight-8.1.lib;vtkIOExodus-8.1.lib;vtkIOExport-8.1.lib;vtkIOExportOpenGL-8.1.lib;vtkIOGeometry-8.1.lib;vtkIOImage-8.1.lib;vtkIOImport-8.1.lib;vtkIOInfovis-8.1.lib;vtkIOLegacy-8.1.lib;vtkIOLSDyna-8.1.lib;vtkIOMINC-8.1.lib;vtkIOMovie-8.1.lib;vtkIONetCDF-8.1.lib;vtkIOParallel-8.1.lib;vtkIOParallelXML-8.1.lib;vtkIOPLY-8.1.lib;vtkIOSQL-8.1.lib;vtkIOTecplotTable-8.1.lib;vtkIOVideo-8.1.lib;vtkIOXML-8.1.lib;vtkIOXMLParser-8.1.lib;vtkjpeg-8.1.lib;vtkjsoncpp-8.1.lib;vtklibharu-8.1.lib;vtklibxml2-8.1.lib;vtklz4-8.1.lib;vtkmetaio-8.1.lib;vtkNetCDF-8.1.lib;vtknetcdfcpp-8.1.lib;vtkoggtheora-8.1.lib;vtkParallelCore-8.1.lib;vtkpng-8.1.lib;vtkproj4-8.1.lib;vtkRenderingAnnotation-8.1.lib;vtkRenderingContext2D-8.1.lib;vtkRenderingContextOpenGL-8.1.lib;vtkRenderingCore-8.1.lib;vtkRenderingFreeType-8.1.lib;vtkRenderingGL2PS-8.1.lib;vtkRenderingImage-8.1.lib;vtkRenderingLabel-8.1.lib;vtkRenderingLIC-8.1.lib;vtkRenderingLOD-8.1.lib;vtkRenderingOpenGL-8.1.lib;vtkRenderingVolume-8.1.lib;vtkRenderingVolumeOpenGL-8.1.lib;vtksqlite-8.1.lib;vtksys-8.1.lib;vtktiff-8.1.lib;vtkverdict-8.1.lib;vtkViewsContext2D-8.1.lib;vtkViewsCore-8.1.lib;vtkViewsInfovis-8.1.lib;vtkzlib-8.1.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="k4a_grabber.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="k4a_grabber.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\Microsoft.Azure.Kinect.Sensor.1.4.1\build\native\Microsoft.Azure.Kinect.Sensor.targets" Condition="Exists('..\packages\Microsoft.Azure.Kinect.Sensor.1.4.1\build\native\Microsoft.Azure.Kinect.Sensor.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Azure.Kinect.Sensor.1.4.1\build\native\Microsoft.Azure.Kinect.Sensor.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Azure.Kinect.Sensor.1.4.1\build\native\Microsoft.Azure.Kinect.Sensor.targets'))" />
+  </Target>
+</Project>
