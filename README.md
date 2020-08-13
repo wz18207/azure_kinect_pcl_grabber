@@ -41,4 +41,4 @@ Distributed under the [MIT License](http://www.opensource.org/licenses/mit-licen
 
 * Collect the point cloud data into *.pcd .
 * Save Body Tracking Data in a file different from *.pcd.
-* Save Body Tracking and pcl::PointXYZRGBA into *.pcd.
+* Save Body Tracking and pcl::PointXYZRGBA in one file.
