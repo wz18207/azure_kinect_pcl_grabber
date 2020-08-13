@@ -1,11 +1,11 @@
 # Azure_kinect_pcl_grabber
 
-Get point cloud data from Azure Kinect DK by using PCL(point cloud library)
+Grab point cloud data from Azure Kinect DK by using PCL(point cloud library)
 Writing the work based on the Kinect2Grabber by UnaNancyOwen
 
 # Environment
 
-* Visual Studio 2017(or later)
+* Visual Studio 2017
 * Azure Kinect Sensor SDK v1.4.1(or later) 
 * Point Cloud Library v1.9.1
 * .NET Core SDK 3.1.2(or later)
