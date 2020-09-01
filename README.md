@@ -21,7 +21,7 @@ Distributed under the [MIT License](http://www.opensource.org/licenses/mit-licen
 * Zhaoyang Wang
   - https://github.com/wz18207
   - wz18207@gmail.com
-  - ww02082345@yahoo.com(if gmail doesn't reponse....)
+  - zw18207@essex.ac.uk
 
 # Reference
 
