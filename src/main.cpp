@@ -45,12 +45,18 @@ int main(int argc, char **argv){
 	viewer->setCameraParameters(intrinsics_eigen, extrinsics_eigen);
 	while (!viewer->wasStopped()){
 		// Update Viewer
+		c++; //time（second)
 		viewer->spinOnce();
 		boost::mutex::scoped_try_lock lock(mutex);
 		if (lock.owns_lock() && cloud){
 			// Update Point Cloud
 			if (!viewer->updatePointCloud(cloud, "cloud")){
 				viewer->addPointCloud(cloud, "cloud");
+			}
+			if (c % 5 == 0) { //time. edit second here.
+				char name[100];
+				sprintf(name, "%d.pcd", total++);
+				pcl::io::savePCDFileASCII(name, *cloud); //save cloud file by whole func.
 			}
 		}
 	}
